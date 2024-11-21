@@ -1,0 +1,5 @@
+# Ignoriere alle .log-Dateien
+*.log
+
+# Falls du Logs aus einem bestimmten Ordner ausschließen möchtest:
+logs/
