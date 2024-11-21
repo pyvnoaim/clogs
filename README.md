@@ -34,7 +34,7 @@ Dieses PowerShell-Skript ermöglicht es, alte Log-Dateien (mit der Endung `.log`
     ```
 
     - `-Path` (Pfad): Das Verzeichnis, das die Log-Dateien enthält.
-    - `-Age` (Alter): Die maximale Anzahl der Monate, die eine Log-Datei alt sein darf, um archiviert zu werden.
+    - `-Age` (Alter): Die Anzahl der Monate, die eine Log-Datei alt sein soll, um archiviert zu werden.
     - `-DestinationPath` (Zielpfad): Der Zielordner, in dem die archivierten Log-Dateien gespeichert werden (optional).
 
     **Hinweis:** Wenn der `-DestinationPath` nicht angegeben wird, wird ein Ordner namens `Archive` im angegebenen `-Path` erstellt.
