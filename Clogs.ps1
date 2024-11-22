@@ -1,8 +1,16 @@
 param(
     [Parameter(Mandatory)]
+    [ArgumentCompleter({
+        param($commandName, $parameterName, $wordToComplete, $commandAst, $fakeBoundParameters)
+        Get-ChildItem -Path . -Directory -Recurse | Where-Object { $_.FullName -like "$wordToComplete*" } | ForEach-Object { $_.FullName }
+    })]
     [string]$Path,
 
     [Parameter()]
+    [ArgumentCompleter({
+        param($commandName, $parameterName, $wordToComplete, $commandAst, $fakeBoundParameters)
+        Get-ChildItem -Path . -Directory -Recurse | Where-Object { $_.FullName -like "$wordToComplete*" } | ForEach-Object { $_.FullName }
+    })]
     [string]$DestinationPath,
 
     [Parameter(Mandatory)]
